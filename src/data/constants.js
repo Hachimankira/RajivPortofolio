@@ -20,7 +20,10 @@ import docker from "../images/icons/docker.svg";
 import slack from "../images/icons/slack.png";
 import trello from "../images/icons/trello.png";
 import notion from "../images/icons/notion.png";
-
+import plusTwo from "../images/icons/plus2.png";
+import texas from "../images/icons/texas.webp";
+import softonic from "../images/icons/softechtonic.webp";
+import resume from "../images/resume.pdf";
 
 
 
@@ -34,8 +37,7 @@ export const Bio = {
   description:
     "I am a creative problem-solver with a passion for innovation and a relentless drive for excellence. Eager to embrace new challenges, I thrive in dynamic environments where I can leverage my diverse skills to deliver impactful solutions. I believe in the power of continuous learning and adaptability, always seeking out opportunities to grow and evolve.",
   github: "https://github.com/rajivstha10",
-  resume:
-    "https://drive.google.com/file/d/1ffZrcMcn8UatXGIaautbbqpV7ADNaETA/view?usp=sharing",
+  resume: resume,
   linkedin: "https://www.linkedin.com/in/raziv1/",
   // twitter: "https://twitter.com/RishavChanda",
   insta: "https://www.instagram.com/raziv_1/",
@@ -165,7 +167,7 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+    img: softonic,
     role: "Flutter Developer",
     company: "Softech Tonic Pvt Ltd.",
     date: "Oct 2023 - Present·",
@@ -184,7 +186,7 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
+    img: softonic,
     role: "QA Intern",
     company: "Softech Tonic Pvt Ltd.",
     date: "Dec 2022 - Aug 2023",
@@ -204,7 +206,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Kiit.jpeg?alt=media&token=3839d520-c59d-4341-ad8f-0980c98de4dd",
+    img: texas,
     school: "Texas College of Management and IT",
     date: "2021 - 2024",
     grade: "3.61 CGPA",
@@ -213,7 +215,7 @@ export const education = [
   },
   {
     id: 1,
-    img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/methodist.png?alt=media&token=018a1b18-e2dd-4f34-8855-cff1b6b69fd3",
+    img: plusTwo,
     school: "St. Lawrence",
     date: "2018 - 2020",
     grade: "3.02 CGPA",
