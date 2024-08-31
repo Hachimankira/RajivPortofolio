@@ -102,7 +102,12 @@ const SkillItem = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 16px;
+   transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+  cursor: pointer; /* Add a pointer on hover */
+  &:hover {
+    transform: scale(1.1); /* Scale up the element on hover */
+  }
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
