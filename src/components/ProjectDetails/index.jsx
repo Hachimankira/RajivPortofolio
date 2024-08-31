@@ -66,11 +66,17 @@ const Desc = styled.div`
 `;
 
 const Image = styled.img`
-    width: 100%;
+    width: 50%;
     object-fit: cover;
     border-radius: 12px;
     margin-top: 30px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+`;
+
+const ImageContainer = styled.div`
+    display: flex;
+    gap: 12px;
+    
 `;
 
 const Label = styled.div`
@@ -173,6 +179,8 @@ const Button = styled.a`
     cursor: pointer;
     text-decoration: none;
     transition: all 0.5s ease;
+    pointer-events: ${({ disabled }) => (disabled ? 'none' : 'auto')};
+    opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
     &:hover {
         background-color: ${({ theme }) => theme.primary + 99};
     }
@@ -197,7 +205,10 @@ const index = ({ openModal, setOpenModal }) => {
                         }}
                         onClick={() => setOpenModal({ state: false, project: null })}
                     />
-                    <Image src={project?.image} />
+                    <ImageContainer>
+                        <Image src={project?.image[0]} />
+                        <Image src={project?.image[1]} />
+                    </ImageContainer>
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
@@ -214,10 +225,10 @@ const index = ({ openModal, setOpenModal }) => {
                                     <Member>
                                         <MemberImage src={member.img} />
                                         <MemberName>{member.name}</MemberName>
-                                        <a href={member.github} target="new" style={{textDecoration: 'none', color: 'inherit'}}>
+                                        <a href={member.github} target="new" style={{ textDecoration: 'none', color: 'inherit' }}>
                                             <GitHub />
                                         </a>
-                                        <a href={member.linkedin} target="new" style={{textDecoration: 'none', color: 'inherit'}}>
+                                        <a href={member.linkedin} target="new" style={{ textDecoration: 'none', color: 'inherit' }}>
                                             <LinkedIn />
                                         </a>
                                     </Member>
@@ -226,8 +237,8 @@ const index = ({ openModal, setOpenModal }) => {
                         </>
                     )}
                     <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
+                        <Button dull href={project?.github} target='new' disabled={!project?.github}>View Code</Button>
+                        <Button href={project?.webapp} target='new' disabled={!project?.webapp}>View Live App</Button>
                     </ButtonGroup>
                 </Wrapper>
             </Container>

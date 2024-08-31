@@ -24,6 +24,14 @@ import plusTwo from "../images/icons/plus2.png";
 import texas from "../images/icons/texas.webp";
 import softonic from "../images/icons/softechtonic.webp";
 import resume from "../images/resume.pdf";
+import palmrealestate from "../images/icons/palmrealestate.webp";
+import hostelhero from "../images/icons/hostelhero.webp";
+import votingapp from "../images/icons/voting.webp";
+import camcricket from "../images/icons/camcricket.webp";
+import palmrealestate1 from "../images/icons/palm.webp";
+import votingapp1 from "../images/icons/voting1.webp";
+import hostelhero1 from "../images/icons/hostel1.webp";
+import camcricket1 from "../images/icons/cam.webp";
 
 
 
@@ -226,103 +234,110 @@ export const education = [
 
 export const projects = [
   {
-    id: 9,
-    title: "Trackify",
-    date: "Jun 2023 - Jul 2023",
-    description:
-      "Trackify is a web application designed to streamline task management and enhance productivity in the workplace. It provides a user-friendly interface for employers to keep track of their employees' daily work activities and empowers employees to log their tasks efficiently. \nAdmin Credentials: # Email: testadmin@gmail.com #Password- 123@testadmin, Employee Credentials:	#Email: testemployee@gmail.com	#Password- 123@Testemployee",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255202416-e1f89b04-2788-45b0-abc2-9dec616669e2.png",
-    tags: [
-      "Docker",
-      "AWS",
-      "DuckDNS",
-      "Eslint",
-      "Husky",
-      "CI/CD",
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-    ],
-    category: "ongoing",
-    github: "https://github.com/rishavchanda/Trackify",
-    webapp: "https://trackify.duckdns.org",
-  },
-  {
     id: 0,
-    title: "Podstream",
-    date: "Apr 2023 - May 2023",
-    description:
-      "Developed a full-stack web application that allows users to search for, play, and pause their favorite podcasts on demand and create podcasts. Implemented user authentication using Google Auth and Jwt Auth, made responsive user interface with React JS that provides users with a seamless experience across all devices. Practiced agile methodologies to optimize team efficiency and communication.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
-    tags: ["React Js", "MongoDb", "Node Js", "Express Js", "Redux"],
-    category: "completed",
-    github: "https://github.com/rishavchanda/Podstream",
-    webapp: "https://podstream.netlify.app/",
-    member: [
-      {
-        name: "Rajiv Shrestha",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
-    ],
-  },
-  {
-    id: 1,
-    title: "Vexa",
-    date: "Oct 2022 - Present",
-    description:
-      "Designed and developed the Vexa project, a project management app that helps users and teams stay organized and on track. Implemented key features such as task tracking, team collaboration, and time tracking to improve productivity and project outcomes and also invite team/project members. The plan is to add a community of users where they can find developers and other team members and chat system implementation.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234916413-96296f13-fe4b-4cc4-b215-e72bd7c27928.png",
+    title: "Cam Cricket",
+    date: "Nov 2023 - Jun 2024",
+    description: "Used WebSocket and packages like Go-Router, Provider, Dio. Built a cross-platform application for online scoring and live match viewing for the CAM Premier League.",
+    image: [camcricket, camcricket1],
     tags: [
-      "React Js",
-      "MongoDb",
-      "Node Js",
-      "Express Js",
-      "Redux",
-      "NodeMailer",
+      "Flutter",
+      "WebSockets",
+      "Dart",
+      "Dio",
+      "Firebase",
+      "JSON",
+      "RESTful APIs",
+      "Bloc",
     ],
     category: "completed",
-    github: "https://github.com/rishavchanda/Project-Management-App",
-    webapp: "https://vexa-app.netlify.app/",
+    // github: "https://github.com/rishavchanda/Podstream",
+    webapp: "https://play.google.com/store/apps/details?id=com.softechtonic.cam_cricket&hl=en&gl=US",
+    // member: [
+      //   {
+        //     name: "Rajiv Shrestha",
+        //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+        //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+        //     github: "https://github.com/rishavchanda/",
+        //   },
+        //   {
+          //     name: "Upasana Chaudhuri",
+          //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+          //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+          //     github: "https://github.com/upasana0710",
+          //   },
+          // ],
+        },
+        {
+          id: 9,
+          title: "Palm Real Estate",
+          date: "May 2024 ",
+          description: "Used Custom Painter, Flutter Maps, and many more widgets. Built a cross-platform application for Real Estate that calculates the area of land via Geo Plotter and custom plotter.",
+          image: [palmrealestate, palmrealestate1],
+          tags: [
+            "Flutter",
+            "Dart",
+            "Custom Painter",
+            "Flutter Maps",
+            "Dio",
+            "Firebase",
+            "Bloc",
+          ],
+          category: "ongoing",
+          // github: "https://github.com/rishavchanda/Trackify",
+          // webapp: "https://trackify.duckdns.org",
+        },
+        {
+          id: 1,
+    title: "Hostel Hero",
+    date: "Oct 2022 - Present",
+    description: "A mobile application that monitors and manages the routines of students living in a hostel.Used packages like qrScanner, HTTP, and Firebase to manage student data.",
+    image: [hostelhero, hostelhero1],
+    tags: [
+      "Flutter",
+      "Dart",
+      "QR Flutter",
+      "Table Calendar",
+      "HTTP",
+      "Firebase",
+      "JSON",
+    ],
+    category: "completed",
+    github: "https://github.com/rajivstha10/hostelhero",
+    // webapp: "https://vexa-app.netlify.app/",
   },
   {
     id: 2,
-    title: "Brain Tumor Detection",
-    date: "Jan 2023 - Mar 2023",
+    title: "Voting App",
+    date: "Jun 2024 - Jun 2024",
     description:
-      "Preprocessed and augmented the dataset to improve model accuracy, trained the model, created API using model and Python, and used React web app for the project's front end. Achievements: Achieved an accuracy of 99.2% to accurately detect brain tumors from medical images.",
-    image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
-    tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-    category: "completed",
-    github: "https://github.com/rishavchanda/Brain-Tumor-Detection",
-    webapp: "https://brain-tumor.netlify.app/",
-    member: [
-      {
-        name: "Rajiv Shrestha",
-        img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        github: "https://github.com/rishavchanda/",
-      },
-      {
-        name: "Upasana Chaudhuri",
-        img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-        linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-        github: "https://github.com/upasana0710",
-      },
+      "A mobile application that uses Firebase as the core backend and updates vote counts in real-time.Utilizes StreamBuilder to show real-time changes in vote counts after every vote.",
+    image: [votingapp, votingapp1],
+    tags: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "JSON",
+      "Go Router",
+      "Gap",
+      "Cupertino Icons",
     ],
+    category: "completed",
+    github: "https://github.com/rajivstha10/votingApp",
+    // webapp: "https://brain-tumor.netlify.app/",
+    // member: [
+    //   {
+    //     name: "Rajiv Shrestha",
+    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+    //     github: "https://github.com/rishavchanda/",
+    //   },
+    //   {
+    //     name: "Upasana Chaudhuri",
+    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+    //     github: "https://github.com/upasana0710",
+    //   },
+    // ],
   },
   // {
   //   id: 3,
