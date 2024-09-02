@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bf538fe7.css",
+    "main.js": "/static/js/main.7906d857.js",
+    "static/media/plus2.png": "/static/media/plus2.a3124d42ed5303f0ee4a.png",
+    "static/media/resume.pdf": "/static/media/resume.74878fd5b00648b344ef.pdf",
+    "static/media/HeroImage.jpg": "/static/media/HeroImage.64404be9104e316dbd2e.jpg",
+    "static/media/palmrealestate.webp": "/static/media/palmrealestate.c14f6c8cedd957cfcdcf.webp",
+    "static/media/css.png": "/static/media/css.c16622345d3b90bf9f23.png",
+    "static/media/bootstrap.png": "/static/media/bootstrap.9cd429090069a189475b.png",
+    "static/media/chroma.cjs": "/static/media/chroma.ca76203c45904f1b05ac.cjs",
+    "static/media/texas.webp": "/static/media/texas.22045fa47766447e4d89.webp",
+    "static/media/git.png": "/static/media/git.985a7327fc7347ebdba0.png",
+    "static/media/vscode.png": "/static/media/vscode.c6e78dde517994a49dc8.png",
+    "static/media/js.png": "/static/media/js.062825dbceed44567e91.png",
+    "static/media/html.png": "/static/media/html.a92a549a591f4acb527a.png",
+    "static/media/flutter.png": "/static/media/flutter.d522d8ca531e77debd54.png",
+    "static/media/slack.png": "/static/media/slack.66799a3d98e94218a7ed.png",
+    "static/media/softechtonic.webp": "/static/media/softechtonic.6949803a5fb7efb3c39f.webp",
+    "static/media/cam.webp": "/static/media/cam.f5ae9165149d611e3927.webp",
+    "static/media/figma.png": "/static/media/figma.72fbc535ebe253a5dbc4.png",
+    "static/media/camcricket.webp": "/static/media/camcricket.b5f94f089b6a933301d0.webp",
+    "static/media/hostel1.webp": "/static/media/hostel1.a26ee1fe7a68cd15a0da.webp",
+    "static/media/palm.webp": "/static/media/palm.dcd77e8c1cad051828b5.webp",
+    "static/media/hostelhero.webp": "/static/media/hostelhero.3dc3956d15f33104a29a.webp",
+    "static/media/netlify.png": "/static/media/netlify.f4b3523160e846bfcd46.png",
+    "static/media/docker.svg": "/static/media/docker.fcfc19cca40e18dde628b0ae8ddc6b26.svg",
+    "static/media/voting.webp": "/static/media/voting.8ab67ffc565c936d235c.webp",
+    "static/media/postman.svg": "/static/media/postman.e65afafee644ce9fe8a727d01b403189.svg",
+    "static/media/mysql.svg": "/static/media/mysql.6394bc2572c13c00cc6e48bb91629ab3.svg",
+    "static/media/voting1.webp": "/static/media/voting1.9c11dbf20c494f6df360.webp",
+    "static/media/python.svg": "/static/media/python.849d0b2b5f1ec20f077dd267498bd536.svg",
+    "index.html": "/index.html",
+    "static/media/firebase.svg": "/static/media/firebase.82a35fc0b90d124a8e7333989f767fd3.svg",
+    "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
+    "main.7906d857.js.map": "/static/js/main.7906d857.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf538fe7.css",
+    "static/js/main.7906d857.js"
+  ]
+}
