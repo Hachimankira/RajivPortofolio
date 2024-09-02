@@ -1,7 +1,7 @@
 {
-  "name": "rishav-chanda-portfolio",
+  "homepage": "https://rajivshrestha10.com.np/",
+  "name": "rajiv-portfolio",
   "version": "0.1.0",
-  "homepage": "https://rishavchanda.github.io",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
@@ -15,7 +15,6 @@
     "@testing-library/user-event": "^13.5.0",
     "chroma-js": "^3.0.0",
     "emailjs": "^4.0.2",
-    "gh-pages": "^3.2.3",
     "react": "^18.0.0",
     "react-bootstrap": "^2.10.4",
     "react-dom": "^18.0.0",
@@ -55,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }

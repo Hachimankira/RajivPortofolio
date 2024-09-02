@@ -2,7 +2,7 @@ import { DiReact } from "react-icons/di";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandRedux } from "react-icons/tb";
 import html from "../images/icons/html.png";
-import css  from "../images/icons/css.png";
+import css from "../images/icons/css.png";
 import js from "../images/icons/js.png";
 import bootstrap from "../images/icons/bootstrap.png";
 import mui from "../images/icons/mui.png";
@@ -70,7 +70,7 @@ export const skills = [
       },
       {
         name: "Bootstrap",
-        image: bootstrap,      
+        image: bootstrap,
       },
       {
         name: "Material UI",
@@ -189,7 +189,7 @@ export const experiences = [
       "State Management (Provider, Bloc)",
       "Git & Version Control",
       "UI/UX Design Principles",
-     
+
     ],
   },
   {
@@ -199,7 +199,7 @@ export const experiences = [
     company: "Softech Tonic Pvt Ltd.",
     date: "Dec 2022 - Aug 2023",
     desc: "Experienced in ensuring the highest quality standards for software products, with a strong focus on test automation and process optimization. Passionate about delivering bug-free, user-centric applications through rigorous testing and continuous improvement."
-,
+    ,
     skills: [
       "Manual Testing",
       "Automated Testing (Selenium)",
@@ -253,41 +253,41 @@ export const projects = [
     // github: "https://github.com/rishavchanda/Podstream",
     webapp: "https://play.google.com/store/apps/details?id=com.softechtonic.cam_cricket&hl=en&gl=US",
     // member: [
-      //   {
-        //     name: "Rajiv Shrestha",
-        //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-        //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-        //     github: "https://github.com/rishavchanda/",
-        //   },
-        //   {
-          //     name: "Upasana Chaudhuri",
-          //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
-          //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
-          //     github: "https://github.com/upasana0710",
-          //   },
-          // ],
-        },
-        {
-          id: 9,
-          title: "Palm Real Estate",
-          date: "May 2024 ",
-          description: "Used Custom Painter, Flutter Maps, and many more widgets. Built a cross-platform application for Real Estate that calculates the area of land via Geo Plotter and custom plotter.",
-          image: [palmrealestate, palmrealestate1],
-          tags: [
-            "Flutter",
-            "Dart",
-            "Custom Painter",
-            "Flutter Maps",
-            "Dio",
-            "Firebase",
-            "Bloc",
-          ],
-          category: "ongoing",
-          // github: "https://github.com/rishavchanda/Trackify",
-          // webapp: "https://trackify.duckdns.org",
-        },
-        {
-          id: 1,
+    //   {
+    //     name: "Rajiv Shrestha",
+    //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
+    //     linkedin: "https://www.linkedin.com/in/rajiv-b89a791b3/",
+    //     github: "https://github.com/rishavchanda/",
+    //   },
+    //   {
+    //     name: "Upasana Chaudhuri",
+    //     img: "https://avatars.githubusercontent.com/u/100614635?v=4",
+    //     linkedin: "https://www.linkedin.com/in/upasana-chaudhuri-2a2bb5231/",
+    //     github: "https://github.com/upasana0710",
+    //   },
+    // ],
+  },
+  {
+    id: 9,
+    title: "Palm Real Estate",
+    date: "May 2024 ",
+    description: "Used Custom Painter, Flutter Maps, and many more widgets. Built a cross-platform application for Real Estate that calculates the area of land via Geo Plotter and custom plotter.",
+    image: [palmrealestate, palmrealestate1],
+    tags: [
+      "Flutter",
+      "Dart",
+      "Custom Painter",
+      "Flutter Maps",
+      "Dio",
+      "Firebase",
+      "Bloc",
+    ],
+    category: "ongoing",
+    // github: "https://github.com/rishavchanda/Trackify",
+    // webapp: "https://trackify.duckdns.org",
+  },
+  {
+    id: 1,
     title: "Hostel Hero",
     date: "Oct 2022 - Present",
     description: "A mobile application that monitors and manages the routines of students living in a hostel.Used packages like qrScanner, HTTP, and Firebase to manage student data.",
@@ -328,7 +328,7 @@ export const projects = [
     //   {
     //     name: "Rajiv Shrestha",
     //     img: "https://avatars.githubusercontent.com/u/64485885?v=4",
-    //     linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
+    //     linkedin: "https://www.linkedin.com/in/rajiv-b89a791b3/",
     //     github: "https://github.com/rishavchanda/",
     //   },
     //   {
