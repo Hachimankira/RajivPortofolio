@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.bf538fe7.css",
-    "main.js": "/static/js/main.7906d857.js",
+    "main.js": "/static/js/main.bb75a4cc.js",
     "static/media/plus2.png": "/static/media/plus2.a3124d42ed5303f0ee4a.png",
     "static/media/resume.pdf": "/static/media/resume.74878fd5b00648b344ef.pdf",
     "static/media/HeroImage.jpg": "/static/media/HeroImage.64404be9104e316dbd2e.jpg",
     "static/media/palmrealestate.webp": "/static/media/palmrealestate.c14f6c8cedd957cfcdcf.webp",
     "static/media/css.png": "/static/media/css.c16622345d3b90bf9f23.png",
+    "static/media/logo.png": "/static/media/logo.eb51c1adf6379fafd73c.png",
     "static/media/bootstrap.png": "/static/media/bootstrap.9cd429090069a189475b.png",
     "static/media/chroma.cjs": "/static/media/chroma.ca76203c45904f1b05ac.cjs",
     "static/media/texas.webp": "/static/media/texas.22045fa47766447e4d89.webp",
@@ -33,10 +34,10 @@
     "index.html": "/index.html",
     "static/media/firebase.svg": "/static/media/firebase.82a35fc0b90d124a8e7333989f767fd3.svg",
     "main.bf538fe7.css.map": "/static/css/main.bf538fe7.css.map",
-    "main.7906d857.js.map": "/static/js/main.7906d857.js.map"
+    "main.bb75a4cc.js.map": "/static/js/main.bb75a4cc.js.map"
   },
   "entrypoints": [
     "static/css/main.bf538fe7.css",
-    "static/js/main.7906d857.js"
+    "static/js/main.bb75a4cc.js"
   ]
 }
