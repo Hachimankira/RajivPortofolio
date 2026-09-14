@@ -1,5 +1,4 @@
 import { DiReact } from "react-icons/di";
-import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandRedux } from "react-icons/tb";
 import html from "../images/icons/html.png";
 import css from "../images/icons/css.png";
