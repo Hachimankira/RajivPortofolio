@@ -13,7 +13,7 @@ const HeroSection = () => {
                 <HeroBg>
                     <HeroBgAnimation />
                 </HeroBg>
-                <HeroInnerContainer >
+                <HeroInnerContainer>
                     <HeroLeftContainer id="Left">
                         <Title>Hi, I am <br /> {Bio.name}</Title>
                         <TextLoop>
@@ -34,12 +34,10 @@ const HeroSection = () => {
 
                     <HeroRightContainer id="Right">
                         <Tilt>
-                            <Img src={HeroImg} className="img-fluid rounded-circle" alt="avatar" />
+                            <Img src={HeroImg} alt="avatar" />
                         </Tilt>
-                        {/* <Img src={HeroImg} alt="hero-image" /> */}
                     </HeroRightContainer>
                 </HeroInnerContainer>
-
             </HeroContainer>
         </div>
     )

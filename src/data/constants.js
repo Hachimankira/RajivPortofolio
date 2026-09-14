@@ -22,6 +22,7 @@ import notion from "../images/icons/notion.png";
 import plusTwo from "../images/icons/plus2.png";
 import texas from "../images/icons/texas.webp";
 import softonic from "../images/icons/softechtonic.webp";
+import rpre from "../images/icons/rpre.jpeg";
 import resume from "../images/resume.pdf";
 import palmrealestate from "../images/icons/palmrealestate.webp";
 import hostelhero from "../images/icons/hostelhero.webp";
@@ -174,10 +175,27 @@ export const skills = [
 export const experiences = [
   {
     id: 0,
+    img: rpre,
+    role: "Flutter Developer",
+    company: "RPRE Tech Studio",
+    date: "Aug 2026 - Present",
+    desc: "Developing cross-platform mobile applications using Flutter, focusing on building high-performance, scalable, and visually engaging solutions. Collaborating with the team to deliver polished apps with clean architecture and modern design patterns.",
+    skills: [
+      "Flutter",
+      "Dart",
+      "Firebase",
+      "RESTful APIs",
+      "State Management (Provider, Bloc)",
+      "Git & Version Control",
+      "UI/UX Design Principles",
+    ],
+  },
+  {
+    id: 1,
     img: softonic,
     role: "Flutter Developer",
     company: "Softech Tonic Pvt Ltd.",
-    date: "Oct 2023 - Present·",
+    date: "Oct 2023 - Aug 2026",
     desc: "Working on mobile app development with a focus on Flutter, building seamless cross-platform applications with robust performance and engaging user experiences. Skilled in leveraging the latest tools and technologies to create high-quality, scalable solutions.",
     skills: [
       "Flutter",
@@ -188,24 +206,22 @@ export const experiences = [
       "State Management (Provider, Bloc)",
       "Git & Version Control",
       "UI/UX Design Principles",
-
     ],
   },
   {
-    id: 1,
+    id: 2,
     img: softonic,
     role: "QA Intern",
     company: "Softech Tonic Pvt Ltd.",
     date: "Dec 2022 - Aug 2023",
-    desc: "Experienced in ensuring the highest quality standards for software products, with a strong focus on test automation and process optimization. Passionate about delivering bug-free, user-centric applications through rigorous testing and continuous improvement."
-    ,
+    desc: "Experienced in ensuring the highest quality standards for software products, with a strong focus on test automation and process optimization. Passionate about delivering bug-free, user-centric applications through rigorous testing and continuous improvement.",
     skills: [
       "Manual Testing",
       "Automated Testing (Selenium)",
       "Bug Tracking (JIRA)",
       "API Testing (Postman)",
       "Test Planning and Strategy",
-      "Performance Testing (LoadRunner)"
+      "Performance Testing (LoadRunner)",
     ],
   },
 ];

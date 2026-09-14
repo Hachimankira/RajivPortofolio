@@ -1,4 +1,3 @@
-
 import React from 'react'
 import styled from 'styled-components'
 import Timeline from '@mui/lab/Timeline';
@@ -9,7 +8,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from '../Cards/ExperienceCard';
 import { experiences } from '../../data/constants';
-import { IndeterminateCheckBox } from '@mui/icons-material';
+import Reveal from '../Reveal';
 
 const Container = styled.div`
     display: flex;
@@ -18,9 +17,9 @@ const Container = styled.div`
     position: relative;
     z-index: 1;
     align-items: center;
-    padding: 40px 0px 80px 0px;
+    padding: 60px 0px;
     @media (max-width: 960px) {
-        padding: 0px;
+        padding: 40px 0px;
     }
 `;
 
@@ -32,33 +31,35 @@ const Wrapper = styled.div`
     flex-direction: column;
     width: 100%;
     max-width: 1350px;
-    padding: 80px 0;
-    gap: 12px;
+    padding: 60px 0;
+    gap: 16px;
     @media (max-width: 960px) {
         flex-direction: column;
     }
 `;
 
 const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
-  }
+    font-size: 42px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 20px;
+    color: ${({ theme }) => theme.text_primary};
+    letter-spacing: -0.5px;
+    @media (max-width: 768px) {
+        margin-top: 12px;
+        font-size: 32px;
+    }
 `;
 
 const Desc = styled.div`
-    font-size: 18px;
+    font-size: 17px;
     text-align: center;
     max-width: 600px;
     color: ${({ theme }) => theme.text_secondary};
+    line-height: 1.6;
     @media (max-width: 768px) {
         margin-top: 12px;
-        font-size: 16px;
+        font-size: 15px;
     }
 `;
 
@@ -73,31 +74,34 @@ const TimelineSection = styled.div`
     gap: 12px;
 `;
 
-
-
 const index = () => {
     return (
         <Container id="experience">
             <Wrapper>
-                <Title>Experience</Title>
-                <Desc>
-                    My work experience as a Developer and working on companies and projects.
-                </Desc>
+                <Reveal>
+                    <Title>Experience</Title>
+                </Reveal>
+                <Reveal delay={100}>
+                    <Desc>
+                        My work experience as a Developer and working on companies and projects.
+                    </Desc>
+                </Reveal>
                 <TimelineSection>
                     <Timeline>
-                        {experiences.map((experience,index) => (
+                        {experiences.map((experience, index) => (
                             <TimelineItem key={index}>
                                 <TimelineSeparator>
                                     <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#7c3aed' }} />}
                                 </TimelineSeparator>
                                 <TimelineContent sx={{ py: '12px', px: 2 }}>
-                                    <ExperienceCard experience={experience} key={index}/>
+                                    <Reveal delay={index * 150}>
+                                        <ExperienceCard experience={experience} key={index} />
+                                    </Reveal>
                                 </TimelineContent>
                             </TimelineItem>
                         ))}
                     </Timeline>
-
                 </TimelineSection>
             </Wrapper>
         </Container>

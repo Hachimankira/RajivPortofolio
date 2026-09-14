@@ -15,42 +15,53 @@ const Document = styled.img`
 
 const Description = styled.div`
     width: 100%;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: ${({ theme }) => theme.text_secondary};
     margin-bottom: 10px;
+    line-height: 1.6;
     @media only screen and (max-width: 768px){
-        font-size: 12px;
+        font-size: 13px;
     }
 `
 
 const Span = styled.span`
-overflow: hidden;
-display: -webkit-box;
-max-width: 100%;
--webkit-line-clamp: 4;
--webkit-box-orient: vertical;
-text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
 `
 
 const Card = styled.div`
     width: 650px;
-    border-radius: 10px;
-    box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-    padding: 12px 16px;
+    border-radius: 14px;
+    padding: 20px;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     gap: 12px;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
+    background: ${({ theme }) => theme.glass};
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid ${({ theme }) => theme.glassBorder};
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    isolation: isolate;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
     &:hover{
-        box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
-        transform: translateY(-5px);
+        border-color: ${({ theme }) => theme.primary}40;
+        transform: translateY(-4px);
+        box-shadow: 0 8px 32px rgba(124, 58, 237, 0.15);
     }
     @media only screen and (max-width: 768px){
-        padding: 10px;
+        padding: 14px;
         gap: 8px;
         width: 300px;
     }
@@ -62,39 +73,39 @@ const Card = styled.div`
     &:hover ${Span}{
         overflow: visible;
         -webkit-line-clamp: unset;
-
     }
-    border: 0.1px solid #854CE6;
 `
 
 const Top = styled.div`
     width: 100%;
     display: flex;
-    gap: 12px
+    gap: 14px;
 `
 
 const Image = styled.img`
-    height: 50px;
-    width: 80px;
-    // background-color: #fff;
+    height: 48px;
+    width: 48px;
     border-radius: 10px;
     margin-top: 4px;
+    object-fit: cover;
+    background: ${({ theme }) => theme.white};
+    padding: 4px;
     @media only screen and (max-width: 768px){
         height: 40px;
+        width: 40px;
     }
 `
 
 const Body = styled.div`
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 `
 
-
 const Name = styled.div`
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: ${({ theme }) => theme.text_primary};
     @media only screen and (max-width: 768px){
         font-size: 14px;
     }
@@ -103,7 +114,7 @@ const Name = styled.div`
 const Degree = styled.div`
     font-size: 14px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: ${({ theme }) => theme.primary};
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
@@ -112,22 +123,20 @@ const Degree = styled.div`
 const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: ${({ theme }) => theme.text_secondary};
     @media only screen and (max-width: 768px){
-        font-size: 10px;
+        font-size: 11px;
     }
 `
 
 const Grade = styled.div`
     font-size: 14px;
     font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: ${({ theme }) => theme.text_secondary};
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
-
-
 
 const EducationCard = ({ education }) => {
     return (

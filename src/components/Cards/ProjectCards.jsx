@@ -1,37 +1,44 @@
 import React from 'react'
 import styled from 'styled-components'
 
-
 const Button = styled.button`
     display: none;
     width: 100%;
     padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
+    background-color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.white};
     font-size: 14px;
-    font-weight: 700;
+    font-weight: 600;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.3s ease;
 `
+
 const Card = styled.div`
-    width: 330px;
-    height: 490px;
-    background-color: ${({ theme }) => theme.card};
+    width: 340px;
+    background-color: ${({ theme }) => theme.glass};
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
     cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 0 0 12px 4px rgba(0,0,0,0.4);
+    border-radius: 14px;
+    border: 1px solid ${({ theme }) => theme.glassBorder};
     overflow: hidden;
-    padding: 26px 20px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 14px;
-    transition: all 0.5s ease-in-out;
+    gap: 12px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    isolation: isolate;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    will-change: transform;
     &:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 0 50px 4px rgba(0,0,0,0.6);
-        filter: brightness(1.1);
+        transform: translateY(-8px) translateZ(0);
+        border-color: ${({ theme }) => theme.primary}40;
+        box-shadow: 0 12px 40px rgba(124, 58, 237, 0.2);
     }
     &:hover ${Button} {
         display: block;
@@ -40,11 +47,10 @@ const Card = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 230px;
+    height: 200px;
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
-    box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
-    object-fit: cover; /* Ensures the image covers the area */
+    object-fit: cover;
     object-position: top;
 `
 
@@ -53,17 +59,17 @@ const Tags = styled.div`
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
     margin-top: 4px;
 `
 
 const Tag = styled.span`
-    font-size: 12px;
-    font-weight: 400;
+    font-size: 11px;
+    font-weight: 500;
     color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
-    padding: 2px 8px;
-    border-radius: 10px;
+    background-color: ${({ theme }) => theme.hover};
+    padding: 3px 10px;
+    border-radius: 6px;
 `
 
 const Details = styled.div`
@@ -73,16 +79,16 @@ const Details = styled.div`
     gap: 0px;
     padding: 0px 2px;
 `
+
 const Title = styled.div`
-    font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_secondary};
+    font-size: 18px;
+    font-weight: 700;
+    color: ${({ theme }) => theme.text_primary};
     overflow: hidden;
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    overflow: hidden;
     text-overflow: ellipsis;
 `
 
@@ -90,23 +96,24 @@ const Date = styled.div`
     font-size: 12px;
     margin-left: 2px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: ${({ theme }) => theme.text_secondary};
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
 `
 
-
 const Description = styled.div`
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    font-size: 13px;
+    color: ${({ theme }) => theme.text_secondary};
     overflow: hidden;
-    margin-top: 8px;
+    margin-top: 6px;
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+    line-height: 1.5;
 `
 
 const Members = styled.div`
@@ -114,20 +121,21 @@ const Members = styled.div`
     align-items: center;
     padding-left: 10px;
 `
+
 const Avatar = styled.img`
-    width: 38px;
-    height: 38px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     margin-left: -10px;
     background-color: ${({ theme }) => theme.white};
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    border: 3px solid ${({ theme }) => theme.card};
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+    border: 2px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
+const ProjectCards = ({project, setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image[0]}/>
+            <Image src={project.image[0]} alt={project.title}/>
             <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag key={index}>{tag}</Tag>
@@ -143,7 +151,6 @@ const ProjectCards = ({project,setOpenModal}) => {
                     <Avatar key={index} src={member.img}/>
                 ))}
             </Members>
-            {/* <Button>View Project</Button> */}
         </Card>
     )
 }
